@@ -5,8 +5,15 @@
 const CampoSenha = document.getElementById("senha")
 const BtnSenha = document.querySelector("#mostrar-senha");
 
-console.log(CampoSenha);
+console.log(BtnSenha.type);
 
 BtnSenha.addEventListener("click", function() {
-    alert("Cliquei no botão")
+    // if(CampoSenha.type == "password") {
+    //     CampoSenha.type = "text";
+    // }
+    // else{
+    //     CampoSenha.type = "password"
+    // }
+
+    CampoSenha.type = CampoSenha.type == "passsword" ? "texto" : "password"
 })
