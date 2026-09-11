@@ -110,11 +110,13 @@
     align-items: center;
     justify-content: center;
 
-    padding: 80px 20px 50px; /* em cima -> direita e esquerda -> embaixo */
+    padding: 80px 20px 50px;
+    /* em cima -> direita e esquerda -> embaixo */
 
     border: 1px solid var(--azul-escuro);
     border-radius: 30px;
-    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.25); /* x -> y -> blur -> cor com transparência */
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.25);
+    /* x -> y -> blur -> cor com transparência */
 
     text-align: center;
 
@@ -228,7 +230,7 @@
 
 /* footer - feito pelos alunos */
 
-footer{
+footer {
     background-color: var(--azul-escuro);
     color: var(--branco);
     padding: 100px 120px 30px;
@@ -253,7 +255,7 @@ footer{
     gap: 100px;
 }
 
-.nav-footer  {
+.nav-footer {
     display: flex;
     flex-direction: column;
 }
@@ -263,6 +265,7 @@ footer{
     margin-bottom: 20px;
 
 }
+
 .nav-footer a {
     color: var(--branco);
     margin-bottom: 10px;
@@ -347,7 +350,8 @@ footer span {
     .beneficios-lista {
         grid-template-columns: repeat(3, 30%);
 
-        overflow-x: scroll; /* permite que o objeto role para os lados na direção x */
+        overflow-x: scroll;
+        /* permite que o objeto role para os lados na direção x */
 
         padding: 50px 20px;
 
@@ -457,5 +461,114 @@ footer span {
         z-index: 100;
 
         display: none;
+    }
+
+
+    .navegacao-ativo {
+        display: flex;
+    }
+
+
+    /* BANNER PRINCIPAL */
+
+    .banner-principal {
+        height: 50vh;
+
+        padding: 30px 0 10px 0;
+
+        position: relative;
+    }
+
+    .banner-principal .texto-banner {
+        width: 100%;
+        height: 100%;
+
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .banner-principal .texto-banner h1 {
+        font-size: 2em;
+    }
+
+    .banner-principal .texto-banner p {
+        display: none;
+    }
+
+    .banner-principal img {
+        width: 40%;
+
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+
+        z-index: 1;
+    }
+
+    .banner-principal .botao {
+        padding: 20px 40px;
+
+        font-size: 1,2em;
+        
+        z-index: 2;
+    }
+
+    /* BENEFICIOS */
+
+    .beneficios-lista {
+        grid-template-columns: repeat(3, 45%);
+    }
+
+    .beneficio-icone img {
+        width: 40%;
+    }
+
+    /* BANNER MEIO */
+    .banner-meio .texto-banner {
+        display: none;
+    }
+    
+    /* FOOTER */
+    
+    footer .main {
+        flex-direction: column;
+        gap: 100px;
+    }
+
+
+    footer {
+        padding: 50px 40px 50px 40px;
+    }
+
+    .rodape-logos {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        gap: 30px;
+    }
+
+    .rodape-informacoes {
+        gap: 30px;
+    }
+
+    .rodape-informacoes p {
+        font-size: 1.5em;
+    }
+
+    .nav-footer a, .footer-inferior {
+        font-size: 1.2em;
+    }
+
+    footer span {
+        margin: 50px 0 30px;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+        text-align: right;
     }
 }
