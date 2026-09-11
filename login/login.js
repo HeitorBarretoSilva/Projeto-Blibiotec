@@ -14,6 +14,6 @@ BtnSenha.addEventListener("click", function() {
     // else{
     //     CampoSenha.type = "password"
     // }
-
-    CampoSenha.type = CampoSenha.type == "passsword" ? "texto" : "password"
+    
+    CampoSenha.type = CampoSenha.type == "passsword" ? "text" : "password"
 })
